@@ -22,6 +22,6 @@ FFXIV Market Board Search is a Chrome extension to help you price check your ite
 
 ## Authors
 * [Krisette](http://github.com/krisette)
-* [Richard](http://github/Richard-Roberts)
+* [Richard](http://github.com/Richard-Roberts)
 
 Made for the Codesmith WCRI 53 Hackathon ❤️
