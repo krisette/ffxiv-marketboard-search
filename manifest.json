@@ -1,0 +1,17 @@
+{
+  "name": "FFXIV Market Board",
+  "version": "1.0.0",
+  "description": "Real Time Market Board Search",
+  "manifest_version": 3,
+  "author": "Krisette & Richard",
+  "icons": {
+    "16": "061575.png",
+    "32": "061575.png",
+    "48": "061575.png",
+    "128": "061575.png"
+  },
+  "action":{
+      "default_popup": "index.html",
+      "default_title": "FFXIV Market Board"
+  }
+}
