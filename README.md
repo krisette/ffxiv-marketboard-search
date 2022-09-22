@@ -4,10 +4,10 @@
 FFXIV Market Board Search is a Chrome extension to help you price check your items in the online MMORPG Final Fantasy XIV. No more world and data center hopping to find the best price for your items. This extension will allow you to search the market board from outside the game.
 
 # How to Use
-- Download the files from the repository into its own folder
+- Download the .zip file under "Releases" on the right and unzip it
 - Open Chrome and go to chrome://extensions/
 - Enable developer mode
-- Click "Load unpacked" and select the folder you downloaded the files to
+- Click "Load unpacked" and select the folder from the .zip file
 - Click the extension icon in the top right of your browser
 - Select the gil icon to open the market board search
 - Select your Data Center (NA only for now)
