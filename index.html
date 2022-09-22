@@ -1,17 +1,22 @@
 <html>
   <head>
-    <title>Marketboard Search</title>
+    <title>FFXIV Market Board Search</title>
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
     <div class="container" style="width: 500px;">
-      <div class="heading"><h1><img src="./images/061641.png" id="logo" />FFXIV Market Board Search</h1></div>
-      <select id='server' type='text' placeholder='server'>
+      <div class="heading">
+        <div id="headerimg"><img src="./images/FFXIV_Main_Scenario_Quest_Icon.webp" id="logo" alt="FFXIV Main Scenario Quest Icon" /></div>
+        <div id="headertext"><h1>FFXIV Market Board Search</h1></div>
+      </div>
+      <div id="fields">
+      <select id='server' type='text'>
+        <option value="" disabled selected hidden>Data Center</option>
         <option value='Aether'>Aether</option>
         <option value='Crystal'>Crystal</option>
         <option value='Primal'>Primal</option>
       </select>
-      <input id='itemIds' type='text' placeholder='item'></input>
+      <input id='itemIds' type='text' placeholder='Enter item here'></input>
       <button>Search</button>
     </div>
     <div class="results">

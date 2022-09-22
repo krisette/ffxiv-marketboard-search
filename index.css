@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;700&display=swap');
+
 body {
   background-image: url('./images/230-2303875_arr-moogles-ffxiv-moogle2.png');
   background-position: -100px -100px;
+  font-family: 'Poppins', sans-serif;
 }
 
 span {
@@ -13,54 +16,77 @@ span {
   height: 75px;
 }
 
-.listing {
-  padding: 5px;
-  margin: 1px;
-}
-
-.results {
-  display: grid;
-  margin-top: 10px;
-}
-
 .heading {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: sans-serif;
+}
+
+#headertext {
+  margin-top: 10px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.4em;
+}
+
+#fields {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 input {
   padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
   border-radius: 5px;
-  border: 1px solid black;
+  border: 1px solid rgb(93, 93, 93);
+  box-shadow: 3px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 input:active {
-  border: 1px solid black;
+  border: 1px solid rgb(93, 93, 93);
 }
 
 select {
   padding: 4px;
   border-radius: 5px;
-  border: 1px solid black;
+  border: 1px solid rgb(93, 93, 93);
+  box-shadow: 3px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 button {
   padding: 5px;
   border-radius: 5px;
-  border: 1px solid black;
+  border: 1px solid rgb(93, 93, 93);
   background-color: lightgrey;
   cursor: pointer;
   box-shadow: 3px 4px 0 rgba(0, 0, 0, 0.15);
+  transition: background-color 0.4s ease-in-out;
 }
 
 button:hover {
   background-color: goldenrod;
-  transition: background-color 2 ease-in;
   
 }
 
 button:active {
   opacity: 50%
+}
+
+.results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.listing {
+  background-color: rgba(0, 0, 0, 0.15);
+  width: 100%;
+  height: auto;
+  margin: 5px 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
 }
