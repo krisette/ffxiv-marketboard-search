@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const listings = data['listings'];
         if (data['listings'] === undefined) {
           const div = document.createElement('div');
-          div.setAttribute('class', 'listing');
+          div.setAttribute('class', 'listing-none');
           const noPostings = document.createElement('span');
           noPostings.setAttribute('id', 'noPostings');
           noPostings.setAttribute('style', 'color: #791723; font-weight: bold; text-align: center;');
@@ -49,7 +49,8 @@ document.addEventListener('DOMContentLoaded', () => {
           const worldName = document.createElement('div');
           worldName.setAttribute('id', 'worldName');
           // assign the innerText of the messages to the current data's message key value
-          pricePerUnit.innerHTML = `Price: <b>${listings[i].pricePerUnit}</b>`
+          const pricePerUnitFormatted = listings[i]['pricePerUnit'].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+          pricePerUnit.innerHTML = `Price: <b>${pricePerUnitFormatted}</b> gil`;
           quantity.innerHTML = `Quantity: <b>${listings[i].quantity}</b>`;
           worldName.innerHTML = `World: <b>${listings[i].worldName}</b>`;
           // append the div to the div with the id #chatbox
