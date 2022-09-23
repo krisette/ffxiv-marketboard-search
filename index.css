@@ -88,7 +88,7 @@ button:active {
   height: auto;
   margin: 5px 0px;
   display: grid;
-  grid-template-columns: 0.2fr 0.6fr 0.4fr 0.6fr;
+  grid-template-columns: 0.2fr 0.5fr 0.4fr 0.6fr;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
